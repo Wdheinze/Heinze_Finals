@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(14, 12, 27);
+color: rgb(241, 243, 255);
+text-align: center;
+}
+
+#CTP{
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: black;
+}
+
+p{
+text-align: center;
+padding-right:100px;
+padding-left:100px;
+text-indent: 2em;
+font-size: larger;
+
+}
+button{
+    align-items: center;
+}
