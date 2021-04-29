@@ -5,6 +5,12 @@
 <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+
     <title>Heinze Finals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -16,32 +22,47 @@
 
         $(document).ready(function () {
             $("#da").click(function () {
+                $("#drag").effect("bounce", { times: 4 }, 300);
                 $("#di").fadeOut("slow").fadeIn("slow")
                 $("#da").fadeOut("slow").fadeIn("slow")
                 $("#drag").fadeOut("slow")
+                $("#thedrag").css("display", "block");
+
             });
             $("#ag").click(function () {
+                $("#gold").effect("bounce", { times: 4 }, 300);
                 $("#ag").fadeOut("slow").fadeIn("slow")
                 $("#pi").fadeOut("slow").fadeIn("slow")
                 $("#gold").fadeOut("slow")
+                $("#goldy").css("display", "block");
             });
             $("#abc").click(function () {
+                $("#cat").effect("bounce", { times: 4 }, 300);
                 $("#ci").fadeOut("slow").fadeIn("slow")
                 $("#abc").fadeOut("slow").fadeIn("slow")
                 $("#cat").fadeOut("slow")
+                $("#kitty").css("display", "block");
 
             });
             $("#au").click(function () {
+                $("#uni").effect("bounce", { times: 4 }, 300);
                 $("#au").fadeOut("slow").fadeIn("slow")
                 $("#ui").fadeOut("slow").fadeIn("slow")
                 $("#uni").fadeOut("slow")
+                $("#corn").css("display", "block");
             });
 
 
             //BOUNCE PLEASES
-            $("button").click(function () {
-                $(".img").effect("bounce", { times: 1 }, 300);
-            });
+            //$("button").click(function () {
+            // $("img").effect("bounce", { times: 4 }, 300);
+
+            //hide and show ^_^
+            /*$("#id").css("display", "none");
+            $("#id").css("display", "block");
+            $('#id').hide();
+            $('#id').show();
+            */
 
         });
 
@@ -52,51 +73,79 @@
 <body>
     <h1 id="top">Adopt a pet</h1>
     <h2>Choose an adorable pet from our shop and adopt it</h2>
+
+    <!--
+        This will be the side div below Putting display none in the divs wouldnt work 
+    -->
+    <div id="side">
+        <div id="thedrag">
+            <img src="dragon.jpg" alt="rich" width="150" height="150">
+            <p>adopted</p>
+        </div>
+        <div id="goldy">
+            <img src="gold.jpg" alt="gold" width="150" height="150">
+            <p>adopted</p>
+        </div>
+        <div id="kitty">
+            <img src="black cat.jpg" alt="witchesbestie" width="150" height="150">
+            <p>adopted</p>
+        </div>
+        <div id="corn">
+            <img src="unicorn.jpg" alt="unicorn" width="150" height="150">
+            <p>adopted</p>
+        </div>
+    </div>
+
     <br>
     <div id="CTP">
         <div id="drag">
             <img src="dragon.jpg" alt="rich" width="350" height="350">
+
+            <p id="di">His name is Rich. He is a stonefelt dragon, he likes to
+                come out and play at night. super friendly to kids and likes to eat charcoal</p>
+            <button id="da">Adopt Rich</button>
         </div>
-        <p id="di">His name is Rich. He is a stonefelt dragon, he likes to
-            come out and play at night. super friendly to kids and likes to eat charcoal</p>
-        <button id="da">Adopt Rich</button>
         <br>
         <br>
         <br>
         <div id="gold">
             <img src="gold.jpg" alt="gold" width="350" height="350">
+
+            <p id="pi">His names gold. He might look like the
+                average
+                run of the mill parrot but this bird came from the lost city of El Dorado. When he sings golden pearls
+                fall
+                from his
+                beak. We think that he is really a pheonix in disguise.</p>
+            <button id="ag">Adopt Gold</button>
         </div>
-        <p id="pi">His names gold. He might look like the
-            average
-            run of the mill parrot but this bird came from the lost city of El Dorado. When he sings golden pearls
-            fall
-            from his
-            beak. We think that he is really a pheonix in disguise.</p>
-        <button id="ag">Adopt Gold</button>
         <br>
         <br>
         <br>
 
         <div id="cat">
             <img src="black cat.jpg" alt="witchesbestie" width="350" height="350">
+
+            <p id="ci">Calling all witches! This black cat
+                is
+                the
+                purrfect companion for you lonely witches and wizards out there needing a best friend for life. This cat
+                is
+                already immortal and she is a sweetheart. </p>
+
+            <button id="abc">Adopt This SweetCat</button>
         </div>
-        <p id="ci">Calling all witches! This black cat
-            is
-            the
-            purrfect companion for you lonely witches and wizards out there needing a best friend for life. This cat
-            is
-            already immortal and she is a sweetheart. </p>
-        <button id="abc">Adopt This SweetCat</button>
         <br>
         <br>
         <br>
         <div id="uni">
             <img src="unicorn.jpg" alt="unicorn" width="350" height="350">
+
+            <p id="ui">This unicorn is our newest rescue. He is
+                already
+                broken in and loves long walks on the beach</p>
+            <button id="au">Adopt Unicorn</button>
         </div>
-        <p id="ui">This unicorn is our newest rescue. He is
-            already
-            broken in and loves long walks on the beach</p>
-        <button id="au">Adopt Unicorn</button>
     </div>
 
 

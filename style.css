@@ -1,18 +1,20 @@
 body {
-    background-color: rgb(14, 12, 27);
+   background-image: url("background.jpg");
 color: rgb(241, 243, 255);
 text-align: center;
 }
 
 #CTP{
     background-color: white;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
 }
 
 img {
     border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 p{
@@ -26,3 +28,75 @@ font-size: larger;
 button{
     align-items: center;
 }
+
+#side{
+   float: right;
+   margin-right: 30px;
+}
+
+#thedrag{
+    display: none;
+}
+
+#goldy{
+    display: none;
+}
+
+#kitty {
+    display: none;
+}
+
+#corn{
+    display: none;
+}
+
+@media only screen and (max-device-width: 8000px) {
+    #CTP {
+      width: 1112px;
+      margin-right: auto;
+      margin-left:auto;
+    }
+    
+    h1{
+        margin-right: auto;
+      margin-left:auto;
+    }
+    h2{
+        margin-right: auto;
+        margin-left:auto;
+    }
+
+  @media only screen and (max-device-width: 414px) {
+      body{
+          background-color: white;
+          color: black;
+      }
+    #CTP {
+      width: 200px;
+      margin-right: auto;
+      margin-left:auto;
+    }
+
+    h1{
+        margin-right: auto;
+      margin-left:auto;
+    }
+    h2{
+        margin-right: auto;
+        margin-left:auto;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 100px;
+        height:100px
+    }
+    p{
+        float: right;
+        padding-right:100px;
+        padding-left:100px;
+        text-indent: 2em;
+        font-size: larger;
+        
+        }
+    }
