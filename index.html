@@ -4,9 +4,29 @@
 
 <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Heinze Finals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script>
+        var bounce = "";
+        $(function () {
+
+        });
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").fadeOut("slow").fadeIn("slow")
+            });
+            //BOUNCE PLEASES
+            $("img").hover(function () {
+                $('img', this).stop(true, true).effect('bounce', 500);
+            }, function () {
+                $('img', this).stop(true, true);
+            });
+
+
+    </script>
 </head>
 
 <body>
@@ -14,46 +34,44 @@
     <h2>Choose an adorable pet from our shop and adopt it</h2>
     <br>
     <div id="CTP">
-        <div id="row1">
-            <img src="dragon.jpg" alt="rich" width="350" height="350">
+        <img src="dragon.jpg" alt="rich" width="350" height="350">
 
-            <p>His name is Rich. He is a stonefelt dragon, he likes to
-                come out and play at night. super friendly to kids and likes to eat charcoal</p>
-            <button id="da">Adopt Rich</button>
-            <br>
-            <br>
-            <br>
-            <img src="gold.jpg" alt="gold" width="350" height="350">
-            <p>His names gold. He might look like the
-                average
-                run of the mill parrot but this bird came from the lost city of El Dorado. When he sings golden pearls
-                fall
-                from his
-                beak. We think that he is really a pheonix in disguise.</p>
-            <button id="ag">Adopt Gold</button>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div id="row2">
-            <img src="black cat.jpg" alt="witchesbestie" width="350" height="350">
-            <p>Calling all witches! This black cat
-                is
-                the
-                purrfect companion for you lonely witches and wizards out there needing a best friend for life. This cat
-                is
-                already immortal and she is a sweetheart. </p>
-            <button id="abc">Adopt This SweetCat</button>
-            <br>
-            <br>
-            <br>
-            <img src="unicorn.jpg" alt="unicorn" width="350" height="350">
-            <p>This unicorn is our newest rescue. He is
-                already
-                broken in and loves long walks on the beach</p>
-            <button id="au">Adopt Unicorn</button>
-        </div>
+        <p>His name is Rich. He is a stonefelt dragon, he likes to
+            come out and play at night. super friendly to kids and likes to eat charcoal</p>
+        <button id="da">Adopt Rich</button>
+        <br>
+        <br>
+        <br>
+        <img src="gold.jpg" alt="gold" width="350" height="350">
+        <p>His names gold. He might look like the
+            average
+            run of the mill parrot but this bird came from the lost city of El Dorado. When he sings golden pearls
+            fall
+            from his
+            beak. We think that he is really a pheonix in disguise.</p>
+        <button id="ag">Adopt Gold</button>
+        <br>
+        <br>
+        <br>
+
+        <img src="black cat.jpg" alt="witchesbestie" width="350" height="350">
+        <p>Calling all witches! This black cat
+            is
+            the
+            purrfect companion for you lonely witches and wizards out there needing a best friend for life. This cat
+            is
+            already immortal and she is a sweetheart. </p>
+        <button id="abc">Adopt This SweetCat</button>
+        <br>
+        <br>
+        <br>
+        <img src="unicorn.jpg" alt="unicorn" width="350" height="350">
+        <p>This unicorn is our newest rescue. He is
+            already
+            broken in and loves long walks on the beach</p>
+        <button id="au">Adopt Unicorn</button>
     </div>
+
 
 </body>
 
