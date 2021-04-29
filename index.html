@@ -15,15 +15,35 @@
         });
 
         $(document).ready(function () {
-            $("button").click(function () {
-                $("p").fadeOut("slow").fadeIn("slow")
+            $("#da").click(function () {
+                $("#di").fadeOut("slow").fadeIn("slow")
+                $("#da").fadeOut("slow").fadeIn("slow")
+                $("#drag").fadeOut("slow")
             });
+            $("#ag").click(function () {
+                $("#ag").fadeOut("slow").fadeIn("slow")
+                $("#pi").fadeOut("slow").fadeIn("slow")
+                $("#gold").fadeOut("slow")
+            });
+            $("#abc").click(function () {
+                $("#ci").fadeOut("slow").fadeIn("slow")
+                $("#abc").fadeOut("slow").fadeIn("slow")
+                $("#cat").fadeOut("slow")
+
+            });
+            $("#au").click(function () {
+                $("#au").fadeOut("slow").fadeIn("slow")
+                $("#ui").fadeOut("slow").fadeIn("slow")
+                $("#uni").fadeOut("slow")
+            });
+
+
             //BOUNCE PLEASES
-            $("img").hover(function () {
-                $('img', this).stop(true, true).effect('bounce', 500);
-            }, function () {
-                $('img', this).stop(true, true);
+            $("button").click(function () {
+                $(".img").effect("bounce", { times: 1 }, 300);
             });
+
+        });
 
 
     </script>
@@ -34,16 +54,19 @@
     <h2>Choose an adorable pet from our shop and adopt it</h2>
     <br>
     <div id="CTP">
-        <img src="dragon.jpg" alt="rich" width="350" height="350">
-
-        <p>His name is Rich. He is a stonefelt dragon, he likes to
+        <div id="drag">
+            <img src="dragon.jpg" alt="rich" width="350" height="350">
+        </div>
+        <p id="di">His name is Rich. He is a stonefelt dragon, he likes to
             come out and play at night. super friendly to kids and likes to eat charcoal</p>
         <button id="da">Adopt Rich</button>
         <br>
         <br>
         <br>
-        <img src="gold.jpg" alt="gold" width="350" height="350">
-        <p>His names gold. He might look like the
+        <div id="gold">
+            <img src="gold.jpg" alt="gold" width="350" height="350">
+        </div>
+        <p id="pi">His names gold. He might look like the
             average
             run of the mill parrot but this bird came from the lost city of El Dorado. When he sings golden pearls
             fall
@@ -54,8 +77,10 @@
         <br>
         <br>
 
-        <img src="black cat.jpg" alt="witchesbestie" width="350" height="350">
-        <p>Calling all witches! This black cat
+        <div id="cat">
+            <img src="black cat.jpg" alt="witchesbestie" width="350" height="350">
+        </div>
+        <p id="ci">Calling all witches! This black cat
             is
             the
             purrfect companion for you lonely witches and wizards out there needing a best friend for life. This cat
@@ -65,8 +90,10 @@
         <br>
         <br>
         <br>
-        <img src="unicorn.jpg" alt="unicorn" width="350" height="350">
-        <p>This unicorn is our newest rescue. He is
+        <div id="uni">
+            <img src="unicorn.jpg" alt="unicorn" width="350" height="350">
+        </div>
+        <p id="ui">This unicorn is our newest rescue. He is
             already
             broken in and loves long walks on the beach</p>
         <button id="au">Adopt Unicorn</button>
